@@ -1,0 +1,39 @@
+﻿
+
+<div class="container">
+    <a href="/admin/Yoneticiler/Insert" class="btn btn-primary" style="margin-bottom:15px">Yeni Ekle</a>
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <td>#</td>
+                <td>Adı Soyadı</td>
+                <td>Email</td>
+                <td>Telefon</td>
+                <td>İşlemler</td>
+            </tr>
+
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Id</td>
+                    <td>@item.Name</td>
+                    <td>@item.Email</td>
+                    <td>@item.Phone</td>
+                    <td>
+                        <a href="/admin/yoneticiler/update/@item.Id" class="btn btn-primary">Güncelle</a>
+                        <a href="/admin/yoneticiler/delete/@item.Id" class="btn btn-success">Sil</a>
+
+
+                    </td>
+
+                </tr>
+            }
+
+
+        </tbody>
+
+    </table>
+</div>

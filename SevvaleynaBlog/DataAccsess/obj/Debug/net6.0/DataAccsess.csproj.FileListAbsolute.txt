@@ -1,0 +1,14 @@
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\bin\Debug\net6.0\DataAccsess.deps.json
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\bin\Debug\net6.0\DataAccsess.runtimeconfig.json
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\bin\Debug\net6.0\DataAccsess.dll
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\bin\Debug\net6.0\DataAccsess.pdb
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\obj\Debug\net6.0\DataAccsess.csproj.AssemblyReference.cache
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\obj\Debug\net6.0\DataAccsess.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\obj\Debug\net6.0\DataAccsess.AssemblyInfoInputs.cache
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\obj\Debug\net6.0\DataAccsess.AssemblyInfo.cs
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\obj\Debug\net6.0\DataAccsess.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\obj\Debug\net6.0\DataAccsess.dll
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\obj\Debug\net6.0\refint\DataAccsess.dll
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\obj\Debug\net6.0\DataAccsess.pdb
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\obj\Debug\net6.0\DataAccsess.genruntimeconfig.cache
+C:\Users\Lenovo\source\repos\SevvaleynaBlog\DataAccsess\obj\Debug\net6.0\ref\DataAccsess.dll

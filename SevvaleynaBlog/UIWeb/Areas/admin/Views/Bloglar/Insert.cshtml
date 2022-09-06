@@ -1,0 +1,23 @@
+﻿@model DataAccsess.Models.Blogs
+
+<div class="container">
+    <form action="/admin/bloglar/Insert" method="post" enctype="multipart/form-data">
+    <input type="file" class="form-control" style="margin-bottom:10px;" name="file"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" placeholder="Blog Adı" asp-for="Name"/>
+    <textarea type="text" class="form-control" style="margin-bottom:10px;height:150px" placeholder="Blog Açıklama" asp-for="Explanation"></textarea>  <!--Yazı bölgesi ayaralanabilir yapmak için böylr yazıypruz kodu-->
+    <select class="form-control" name="Status">
+        <option value="True">Aktif</option>
+         <option value="False">Pasif</option>
+    </select>
+    <button type="submit" class="form-control btn btn-primary">Ekleme Yap</button>
+    </form>
+</div>
+@if(ViewBag.Message != null)
+{
+    <div class="alert alert-success" style="margin-top:15px">@ViewBag.Message</div>
+
+}
+@if(ViewBag.Error != null )
+{
+    <div class="alert alert-danger" style="margin-top:15px">@ViewBag.Error</div>
+}

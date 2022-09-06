@@ -1,0 +1,36 @@
+﻿
+<div class="container">
+    <a href="/admin/bloglar" class="btn btn-primary" style="margin-bottom:10px;">Geri</a>
+    <form action="/admin/bloglar/Update/@Model.Id" enctype="multipart/form-data" method="post">
+        <img src="/images/@Model.Images" width="350px" style="margin-bottom:10px;" />
+        <input name="Images" value="@Model.Images" hidden />
+        <input type="file" name="file" class="form-control" style="margin-bottom:10px;"/>
+        <input type="text" class="form-control" name="Name" value="@Model.Name" style="margin-bottom:10px;"/>
+        <textarea name="Explanation" class="form-control" style="margin-bottom:10px;">@Model.Explanation</textarea>
+        <input type="date" class="from-control" value="@Model.BlogDateTime.ToString("yyyy-MM-dd")" name="BlogDateTime" style="margin-bottom:10px;"/>
+        
+        <select class="form-control" name="Status">
+            @if (Model.Status==true)
+            {
+                <option value="True">Aktif</option>
+                 <option value="False">Pasif</option>
+            }
+            else
+            {
+                <option value="False">Pasif</option>
+                 <option value="True">Aktif</option>
+            }
+        </select>
+        <button type="submit" class="form-control btn btn-primary">Güncelle</button>
+
+    </form>
+</div>
+
+@if(ViewBag.Message != null)
+{
+    <div class="alert alert-success" style="margin-top:15px;">@ViewBag.Message</div>
+}
+@if(ViewBag.Error != null)
+{
+    <div class="alert alert-danger" style="margin-top:15px;">@ViewBag.Error</div>
+}

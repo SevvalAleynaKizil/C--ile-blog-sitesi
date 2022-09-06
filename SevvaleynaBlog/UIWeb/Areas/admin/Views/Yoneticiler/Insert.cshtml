@@ -1,0 +1,23 @@
+﻿@model DataAccsess.Models.Users
+
+<div class="container">
+    <form action="/admin/yoneticiler/Insert" method="post" >
+    <input type="text" class="form-control" style="margin-bottom:10px;" placeholder="Ad Soyad" asp-for="Name"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" placeholder="Email" asp-for="Email"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" placeholder="Telefon" asp-for="Phone"/>
+    <input type="password" class="form-control" style="margin-bottom:10px;" placeholder="Şifre" asp-for="Password"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" placeholder="Adresiniz" asp-for="FullAdress"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" placeholder="Linkedin" asp-for="Linkedin"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" placeholder="Instagram" asp-for="Instagram"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" placeholder="Github" asp-for="Github"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" placeholder="Twitter" asp-for="Twitter"/>
+    <button type="submit" class="form-control btn btn-primary">Ekleme Yap</button>
+
+    </form>
+
+@if(ViewBag.Message != null)
+{
+    <div class="alert alert-success" style="margin-top:15px">@ViewBag.Message</div>
+
+}
+</div>

@@ -1,0 +1,68 @@
+﻿<body class="home-template">
+
+    <header class="main-header " style="background-image: url(/img/Aleyna.jpg)">
+        <div class="vertical">
+            <div class="main-header-content inner">
+                <h1 class="page-title">Aleyna Blog</h1>
+                <div class="entry-title-divider">
+                    <span></span><span></span><span></span>
+                </div>
+                <h2 class="page-description">Thoughts, reviews and ideas since 1999.</h2>
+            </div>
+        </div>
+        <a class="scroll-down icon-arrow-left" href="#content" data-offset="-45"><span class="hidden">Scroll Down</span></a>
+    </header>
+    <main id="content" class="content" role="main">
+
+        <div class="wraps">
+
+
+            <img src="/img/shadow.png" class="wrapshadow">
+            <div id="bloglar">
+                <div class="grid">
+                    @foreach (var item in Model)
+                    {
+                        <a href="/blog/Details/@item.Id">
+                            <div class="grid-item">
+                                <article class="post">
+
+                                    <div class="wrapgriditem">
+
+
+
+                                        <header class="post-header">
+                                            <h2 class="post-title"><a href="/blog/Details/@item.Id">@item.Name</a></h2>
+                                        </header>
+                                        <section class="post-excerpt">
+                                            <p>
+                                                @if (item.Explanation.Length > 100)
+                                                {
+                                                    @Html.Raw(item.Explanation.Substring(0,66))
+
+                                                }
+                                                else
+                                                {
+                                                    @Html.Raw(item.Explanation)
+
+                                                }
+                                            </p>
+
+                                        </section>
+
+                                        <footer class="post-meta">
+                                            <a href="#">Aleyna</a>
+                                            <time class="post-date" datetime="2016-12-18">@item.BlogDateTime</time>
+                                        </footer>
+                                    </div>
+                                </article>
+                            </div>
+                        </a>
+                    }
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+</body>

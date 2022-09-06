@@ -1,0 +1,23 @@
+﻿
+
+<div class="container">
+    <a href="/admin/yoneticiler" class="btn btn-primary" style="margin-bottom:15px;">Geri Git</a>
+    <form action="/admin/yoneticiler/Update/@Model.Id" method="post" >
+    <input type="text" class="form-control" style="margin-bottom:10px;" value="@Model.Name" name="Name"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" value="@Model.Email" name="Email"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" value="@Model.Phone" name="Phone"/>
+    <input type="password" class="form-control" style="margin-bottom:10px;" value="@Model.Password" name="Password"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" value="@Model.FullAdress" name="FullAdress"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" value="@Model.Linkedin" name="Linkedin"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" value="@Model.Instagram" name="Instagram"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" value="@Model.Github" name="Github"/>
+    <input type="text" class="form-control" style="margin-bottom:10px;" value="@Model.Twitter" name="Twitter"/>
+    <button type="submit" class="form-control btn btn-primary">Ekleme Yap</button>
+    </form>
+
+@if(ViewBag.Message != null)
+{
+    <div class="alert alert-success" style="margin-top:15px">@ViewBag.Message</div>
+
+}
+</div>

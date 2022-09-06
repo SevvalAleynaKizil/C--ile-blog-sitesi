@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+<!-- HTML : Yapılacak Olan Web Sitenin İskeletini Belirtmemizi sağlayan kodlamadır. 
+ CSS : Yapılmış olan İskelet Yapıya Makyaj yapmamızı sağlayan yardımcı kod kod bloğudur.
+
+ Bootstrap : Twitter Tarafından Web Tasarımcılar için oluşturulmuş hazır makyak kütüphanesidir.
+
+ Html CLASS : Bootstrap kütüphaneler içerisindeki makyaj isimlerini belirttiğimiz yerdir. <div class= "BtnRed"></div> Bootstrap' da hangi kod bloğu buna karşılık geliyorsa, oradaki makyaj div'e aktarılır
+
+ JavaScript : Html üzerinde dinamik işlemler yapmamıza olanak sağlayan yardımcı kod bloklarıdır.
+
+ Ajax : Javascript içerisindeki bir kütüphanedir, Bunun sayesinde anlık olarak POST ve GET işlemi gerçekleştirebiliriz.
+
+ Head Bölümüne : Js ve Css Kütüphanelerimizin linkleri eklenir.
+ Body Bölümün de Kullanıcının göreceği tasarımlar yapılır.
+
+-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+   </head>
+
+<body>
+
+    <div class="container">
+        <nav class="navbar navbar-inverse" style="margin-top:25px">
+            <div class="container-fluid">
+                <div class="navbar-header"><a class="navbar-brand" href="/Home">BLOG SİTESİ</a></div>
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/admin/bloglar">Bloglar</a></li>
+                    <li><a href="/admin/yoneticiler">Yöneticiler</a></li>
+                    
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="/admin/cikis">Çıkış Yap</a></li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+
+    <div>
+        @RenderBody()
+    </div>
+</body>
+</html>

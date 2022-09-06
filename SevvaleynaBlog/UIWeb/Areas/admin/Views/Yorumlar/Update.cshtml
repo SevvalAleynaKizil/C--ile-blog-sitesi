@@ -1,0 +1,34 @@
+﻿
+<div class="container">
+
+    <form action="/admin/Yorumlar/Update/@Model.Id" method="post">
+        <input type="text" name="Commenter" class="form-control" style="margin-bottom:15px;"
+               value="@Model.Commenter" />
+               <input type="text" name="BlogsId" value="@Model.BlogsId" hidden />
+
+        <input type="date" name="CommentDate" class="form-control" style="margin-bottom:15px;"
+               value="@Model.CommentDate.ToString("yyyy-MM-dd")" />
+
+        <input type="text" name="Email" class="form-control" style="margin-bottom:15px;"
+               value="@Model.Email" />
+
+        <select class="form-control" name="Status">
+            @if (Model.Status == true)
+            {
+                <option value="True">Aktif</option>
+                <option value="False">Pasif</option>
+
+            }
+            else
+            {
+                <option value="False">Pasif</option>
+                <option value="True">Aktif</option>
+            }
+
+        </select>
+
+<textarea name="UserComment" class="form-control" style="height:250px;">@Model.UserComment</textarea>
+        <button type="submit" class="form-control btn btn-primary">Güncelle</button>
+
+    </form>
+</div>
